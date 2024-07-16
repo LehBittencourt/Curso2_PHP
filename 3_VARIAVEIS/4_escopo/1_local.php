@@ -1,25 +1,26 @@
 <?php 
 
-$x = 10;
+    $x = 10;
 
-echo "$x global <br>";
+    echo "$x global <br>";
 
-function teste() {
-    $x = 5;
+    function teste() {
+        $x = 5;
     
-    echo "$x local <br>";
-}
+        echo "$x local <br>";
+    }
 
-teste();
+    teste();
 
-function testando() {
-    $x = 12;
+    function testando() {
+        $x = 12;
 
-    echo "$x local 2 <br>";
-}
+        echo "$x local 2 <br>";
+    }
 
-echo "<br>";
-testando();
-teste();
-echo "$x global <br>";
+    echo "<br>";
+    testando();
+    teste();
+    echo "$x global <br>";
 
+?>

@@ -1,33 +1,37 @@
 <?php
 
-$teste  = "asd";
+    $teste  = "asd";
 
-echo "$teste global 1 <br>";
+    echo "$teste global 1 <br>";
 
-if(5 > 2){
-    $teste = "dsa";
+    if (5 > 2) {
+        $teste = "dsa";
 
-    echo "$teste if <br>";
-}
+        echo "$teste if <br>";
+    }
 
-echo "$teste global 2 <br>";
+    echo "$teste global 2 <br>";
 
-function funcao(){
-    $teste = "xsxs";
+    function funcao()
+    {
+        $teste = "xsxs";
 
-    echo "$teste local <br>";
-}
+        echo "$teste local <br>";
+    }
 
-funcao();
+    funcao();
 
-function testandoGlobal() {
-    global $teste;
+    function testandoGlobal()
+    {
+        global $teste;
 
-    $teste = 2;
+        $teste = 2;
 
-    echo "$teste global função <br>";
-}
+        echo "$teste global função <br>";
+    }
 
-testandoGlobal();
-echo "$teste global 3 <br>";
+    testandoGlobal();
 
+    echo "$teste global 3 <br>";
+
+?>
